@@ -1,0 +1,16 @@
+---
+  - hosts: resume
+    tasks:
+      - name: Git clone the code
+        git:
+          repo: git@github.com:psionikangel/resume.git
+          dest: ~/resume
+          accept_hostkey: true
+      - name: Build the docker container
+        shell: docker build -t resume:latest .
+        args:
+          chdir: /home/ubuntu/resume
+        become: true
+      - name: Start the containter
+        shell: docker run --name current-resume -d -p 80:80 resume:latest
+        become: true
