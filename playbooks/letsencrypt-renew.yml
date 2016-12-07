@@ -1,0 +1,6 @@
+---
+  - hosts: resume
+    tasks:
+      - name: Renew the letsencrypt certificate
+        shell: letsencrypt renew
+        become: true
