@@ -8,5 +8,5 @@
         apt: name=wcstools update_cache=yes state=latest
         become: true
       - name: Get a certificate
-        shell: letsencrypt certonly --staging --email jeremie.carpentier.roy@gmail.com --agree-tos --webroot -w /home/ubuntu/resume/site -d jeremie.ninja -d www.jeremie.ninja
+        shell: letsencrypt certonly --staging --email jeremie.carpentier.roy@gmail.com --agree-tos --webroot --webroot-path /home/ubuntu/resume/site -d jeremie.ninja -d www.jeremie.ninja
         become: true
