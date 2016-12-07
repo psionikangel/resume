@@ -1,0 +1,12 @@
+---
+  - hosts: resume
+    tasks:
+      - name: Install letsencrypt
+        apt: name=letsencrypt update_cache=yes state=latest
+        become: true
+      - name: Install wcstools
+        apt: name=wcstools update_cache=yes state=latest
+        become: true
+      - name: Get a certificate
+        shell: letsencrypt certonly --staging --email jeremie.carpentier.roy@gmail.com --agree-tos --webroot -w /home/ubuntu/resume/site -d jeremie.ninja -d www.jeremie.ninja
+        become: true
