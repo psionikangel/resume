@@ -15,5 +15,5 @@
         shell: docker rm -f current-resume
         become: true
       - name: Start the containter
-        shell: docker run --name current-resume -d -p 80:80 -p 443:443 -v /site:/usr/share/nginx/html resume:latest
+        shell: docker run --name current-resume -d -p 80:80 -p 443:443 -v /site:/usr/share/nginx/htmla -v nginx.conf:/etc/nginx/nginx.conf resume:latest
         become: true
