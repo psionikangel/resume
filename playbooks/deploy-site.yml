@@ -6,6 +6,11 @@
           repo: git@github.com:psionikangel/resume.git
           dest: ~/resume
           accept_hostkey: true
+      - name: Remove existing container with the same name
+        shell: docker rm -f current-resume
+        become: true
       - name: Start the containter
-        shell: docker run --name current-resume -d -p 80:80 -p 443:443 -v /site:/usr/share/nginx/html -v /nginx:/etc/nginx/ nginx --rm
+        shell: docker run --name current-resume -p 80:80 -p 443:443 -v site:/usr/share/nginx/html -v nginx:/etc/nginx -d nginx
+        args:
+          chdir: /home/ubuntu/resume
         become: true
