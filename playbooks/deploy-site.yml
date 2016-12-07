@@ -11,6 +11,9 @@
         args:
           chdir: /home/ubuntu/resume
         become: true
+      - name: Remove old versions of the container
+        shell: docker rm -f current-resume
+        become: true
       - name: Start the containter
-        shell: docker run --name current-resume -d -p 80:80 -p 443:443 -v /site:/usr/share/nginx/html -v /nginx:/etc/nginx/nginx.conf resume:latest
+        shell: docker run --name current-resume -d -p 80:80 -p 443:443 -v /site:/usr/share/nginx/html -v /nginx:/etc/nginx/ resume:latest
         become: true
