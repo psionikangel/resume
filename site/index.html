@@ -1,5 +1,727 @@
+<!DOCTYPE html>
 <html>
-<body>
-  <strong>Hello, world!</strong>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.teal-indigo.min.css">
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js">
+</script>
+</style>
+<title></title>
+</head>
+<body style="background-color:#e9f0f5;">
+
+  <!-- Simple header with fixed tabs. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+              mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Jérémie Carpentier-Roy</span>
+      </div>
+      <!-- Tabs -->
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">About me</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Education</a>
+        <a href="#fixed-tab-3" class="mdl-layout__tab">Skills</a>
+        <a href="#fixed-tab-4" class="mdl-layout__tab">Experience</a>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Options</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/fr">Switch to french</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+        <div class="page-content">
+            <h4 style="padding:30px;" class="mdl-typography--text-justify">I am a software engineer with 10 years experience that specializes in DevOps roles.
+            Technically speaking, I see myself as a generalist, I learn quickly and always had an interest in learning new technologies.
+            This led me to learn a lot of usefull skills over the years, most often by going out of my comfort zone to tackle a particularly challenging technical problem.
+            I am a challenge-driven person and technology enthusiast that is well at ease in both technology oriented and people oriented roles.
+            I prefer to work within a team sharing a common objective, most likely solving problems through technology and innovation.
+            <br><br>
+            I strongly believe that a lean software development process backed up by the best tools is key to innovation and success.
+            This is why this resume is hosted in a <em><a href="https://hub.docker.com/_/nginx/" target="_blank">Nginx Docker</a></em> container hosted on
+            <em><a href="https://aws.amazon.com/ec2/" target="_blank">Amazon EC2</a></em> with automated SSL certificates from <em><a href="https://letsencrypt.org/" target="_blank">Let's Encrypt</a></em>.
+            Every management task for this site is automated with <em><a href="https://www.ansible.com/" target="_blank">Ansible</a></em>. Also, you can check the source code on Github.
+            It might be overkill for a simple resume, but it shows that my experience is not just a list of buzzwords. Plus, it was really fun to do something out of the ordinary.
+            <br><br><br>
+            If you think my profile would be a great addition to your team, contact me using the link in the footer. I'll be happy to get in touch!</h4>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+        <div class="page-content">
+
+          <div class="mdl-grid" style="max-width:1200px">
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width:495px;">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">École de technologie supérieure</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  Bachelor Degree in Software Engineering
+                  <ul>
+                    <li>Specialization: Information Systems</li>
+                    <li>End of study dissertation: Applications of code-sharing and code-reuse strategies in the enterprise</li>
+                    <li>3 mandatory industry internships completed</li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <div class="mdl-typography--button mdl-color-text--accent">
+                    2005 &rarr; 2010
+                  </div>
+                </div>
+                <div class="mdl-card__menu">
+                  <a href="http://en.etsmtl.ca" target="_blank">
+                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">school</i>
+                  </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width:495px;">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">CÉGEP du Vieux Montréal</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  College Degree in Computer Science
+                  <ul>
+                    <li>Good balance of networking, system administration and programming classes</li>
+                    <li>End of study project: App to manage a recreational tennis league
+                    <li>1 optional industry internship completed</li>
+                  </ul>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <div class="mdl-typography--button mdl-color-text--accent">
+                    2002 &rarr; 2005
+                  </div>
+                </div>
+                <div class="mdl-card__menu">
+                  <a href="http://www.cvm.qc.ca" target="_blank">
+                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">school</i>
+                  </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+        <div class="page-content">
+          <div class="mdl-grid" style="max-width:1200px;">
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-typography--title" style="padding:5px;">
+                Soft skills
+              </div>
+              <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:495px;">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Skill</th>
+                    <th>Proficiency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">French, spoken</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">French, written</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">English, spoken</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">English, written</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Presentations, public speaking</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Agile methodologies</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Business analysis</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Scrum master</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-typography--title" style="padding:5px;">
+                Technical skills and tools
+              </div>
+              <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:495px">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Skill</th>
+                    <th>Proficiency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Ansible</td>
+                      <td>
+                          <i class="material-icons mdl-color-text--accent">star</i>
+                          <i class="material-icons mdl-color-text--accent">star</i>
+                          <i class="material-icons mdl-color-text--accent">star</i>
+                          <i class="material-icons mdl-color-text--accent">star</i>
+                          <i class="material-icons mdl-color-text--accent">star_border</i>
+                      </td>
+                    </tr>
+                    <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Amazon Web Services</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Apache Karaf</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Azure</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">C# / .NET</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">DevOps</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">DNS</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Docker</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Git</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Gitlab</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Golang</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Java</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Javascript</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Jenkins</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Linux</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Maven</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">MySQL</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Nginx</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Postgresql</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Python</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">SharePoint Server</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">SQL Server</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Subversion</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">System architecture</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Teamcity</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Technical analysis</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Technical documentation</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Vagrant</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">VMWare</td>
+                    <td>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                        <i class="material-icons mdl-color-text--accent">star_border</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-4">
+        <div class="page-content">
+          <section id="cd-timeline" class="cd-container">
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-picture">
+                <i class="material-icons mdl-color-text--white">laptop_chromebook</i>
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Solution architect @ <a href="http://www.coginov.com/en-us/" target="_blank">Coginov</a></h2>
+        				<p>I help the professional services team with their development projects by providing up-to-date development tools and implementing software engineering best practices.
+                   I also participate in the development efforts by performing tasks such as architectural design, technical documentation and code reviews as well as the odd coding task.
+                </p>
+                <p>
+                  <strong>Highlights</strong>
+                  <ul>
+                    <li>Designed and implemented an end to end software lifecycle process from the ground up using open-source technologies</li>
+                    <li>Helped the teams move from working in vertical silos to working as cross-functional teams</li>
+                  </ul>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">DevOps</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">GitLab</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Jenkins</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Ansible</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Vagrant</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Docker</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Scrum master</span>
+                </span>
+        				<span class="cd-date">February 2016 &rarr; now</span>
+               <!-- cd-timeline-content -->
+              </div>
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-movie">
+        				<i class="material-icons mdl-color-text--white">laptop_chromebook</i>
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Developer, development infrastructure @ <a href="http://www.logibec.com/en/" target="_blank">Logibec</a></h2>
+        				<p>I was part of the development infrastructure team tasked with the development and maintenance of the company's development infrastructure. My responsibilities included
+                 evaluating new technology, developing standard-compliant libraries for company-wide usage and maintaining various development servers
+                </p>
+                <p>
+                  <strong>Highlights</strong>
+                  <ul>
+                    <li>Worked on a mission-critical project to develop an identity server to provide world-class security features to the company's software and APIs</li>
+                    <li>Handled the migration of all code repositories from svn 1.3 to svn 1.9 and then to git</li>
+                    <li>Developed middlewares for multiple projects using Apache Karaf and Apache ServiceMix</li>
+                  </ul>
+                </p>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">DevOps</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">C#</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Java</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Git</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">TeamCity</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Scrum master</span>
+                </span>
+        				<span class="cd-date">August 2014 &rarr; February 2016</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-picture">
+        				<i class="material-icons mdl-color-text--white">laptop_chromebook</i>
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Programmer-Analyst @ <a href="http://www.alphamosaik.com" target="_blank">AlphaMosaïk</a></h2>
+        				<p>I was part of the Collaboration and Business Portal team, which focuses on providing clients
+                  with professional services around the Microsoft SharePoint Server platform as well as the K2 blackpearl workflow
+                  solutions. My role was to develop new business for the team, help develop the team’s methodology and tools
+                   and assist other team members in overcoming difficult technical issues.
+                </p>
+                <p>
+                  <strong>Highlights</strong>
+                  <ul>
+                    <li>Project Lead, Technical Analyst and Subject Matter Expert for a major account (Newfoundland Liquor Corporation) for 4 years</li>
+                    <li>Technical Lead for an external team (Centric Consulting) offsite in Cleveland, OH for their first K2 blackpearl project</li>
+                    <li>Technical Lead  on a large-scale workflow project at BDC (Development Bank of Canada)</li>
+                    <li>Presenter for Microsoft CIE program (Customer Immersion Experience)</li>
+                  </ul>
+                </p>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">SharePoint</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Technical Analysis</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Leadership</span>
+                </span>
+        				<span class="cd-date">September 2008 &rarr; July 2014</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-location">
+        				<i class="material-icons mdl-color-text--white">laptop_chromebook</i>
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Consultant, technical support @ <a href="https://www.cgi.com/en/canada" target="_blank">CGI</a></h2>
+        				<p>I was part of a call center team that offered technical support of various levels to CGI’s clients.
+                  The support offer was varied: Hardware, Operating Systems and Software (Client, Web and Mainframe applications).</p>
+                  <span class="mdl-chip">
+                    <span class="mdl-chip__text">Tech Support</span>
+                  </span>
+                  <span class="mdl-chip">
+                    <span class="mdl-chip__text">Soft skills</span>
+                  </span>
+        				<span class="cd-date">February 2007 &rarr; August 2008</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-location">
+        				<i class="material-icons mdl-color-text--white">laptop_chromebook</i>
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Quality Assurance (intern) @ <a href="https://www.transat.com/en-CA/corporate" target="_blank">Transat</a></h2>
+          				<p>I participated in the development of Air Transat’s Intranet portal using the Microsoft Windows SharePoint Services 3.0 platform.
+                    In order to successfully deliver the project on a tight deadline, I performed load testing on the environment by writing automated user scenarios
+                    and wrote technical documentation and user guides as well as provide training to future content editors.
+                  </p>
+                  <span class="mdl-chip">
+                    <span class="mdl-chip__text">SharePoint</span>
+                  </span>
+                  <span class="mdl-chip">
+                    <span class="mdl-chip__text">Technical Documentation</span>
+                  </span>
+        				<span class="cd-date">January 2007 &rarr; August 2007</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-movie">
+        				<i class="material-icons mdl-color-text--white">laptop_chromebook</i>
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Developer (intern) @ <a href="https://www.ibm.com/ca-en/" target="_blank">IBM</a></h2>
+        				<p>Upon the arrival of a new plant controller software, the MagNUM inventory system had to be refactored to meet the new
+                  requirements brought by extensive data model changes.
+                  My main responsibilities were to analyze and code the required changes to the application using the Java / Websphere toolkit as well as
+                  write unit tests and perform regression testing in order to migrate code to the production environment.
+                </p>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Java</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">Websphere</span>
+                </span>
+                <span class="mdl-chip">
+                  <span class="mdl-chip__text">JUnit</span>
+                </span>
+        				<span class="cd-date">2006</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+        	</section> <!-- cd-timeline -->
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__right-section">
+      <div class="mdl-logo">Jérémie Carpentier-Roy</div>
+      <ul class="mdl-mini-footer__link-list">
+        <li><a href="https://github.com/psionikangel/resume" target="_blank">GitHub</a></li>
+        <li><a href="mailto:jeremie.carpentier.roy@gmail.com">Email me</a></li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
