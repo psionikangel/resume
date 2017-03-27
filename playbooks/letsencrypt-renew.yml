@@ -4,3 +4,14 @@
       - name: Renew the letsencrypt certificate
         shell: letsencrypt renew
         become: true
+      - name: Build docker image
+        shell: docker build -t resume:latest .
+        args:
+          chdir: /home/ubuntu/resume
+        become: true
+      - name: Remove existing container with the same name
+        shell: docker rm -f current-resume
+        become: true
+      - name: Start the containter
+        shell: docker run --name current-resume -p 80:80 -p 443:443 -v /home/ubuntu/resume/site:/usr/share/nginx/html -v /etc/letsencrypt:/etc/letsencrypt -d resume:latest
+        become: true

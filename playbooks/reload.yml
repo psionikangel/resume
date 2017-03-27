@@ -1,0 +1,8 @@
+---
+  - hosts: resume
+    tasks:
+      - name: Git clone of the code
+        git:
+          repo: git@github.com:psionikangel/resume.git
+          dest: ~/resume
+          accept_hostkey: true
